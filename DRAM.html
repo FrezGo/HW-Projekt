@@ -1,0 +1,296 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAM-Speicher verstehen: D-RAM, S-RAM, M-RAM und R-RAM detailliert erklärt</title>
+    <meta name="description" content="Tauche tief ein in die Welt der RAM-Speicher! Erfahre alles über D-RAM, S-RAM, M-RAM und R-RAM, ihre Funktionsweisen, Vor- und Nachteile sowie Anwendungen in der modernen Technik.">
+    <meta name="keywords" content="DRAM, SRAM, MRAM, RRAM, RAM, Arbeitsspeicher, Speichertechnologien, flüchtiger Speicher, nicht-flüchtiger Speicher, Computer Hardware, RAM Vergleich, Speicherzukunft, NVM, Non-Volatile Memory, Dynamic RAM, Static RAM, Magnetoresistive RAM, Resistive RAM">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <!-- WICHTIG: relativer Pfad für Bild, wenn es im selben Projektordner liegt -->
+        <a href="Index.html">
+            <img id="logo" src="HWLogo.png" alt="Hardware Hub Logo">
+        </a>
+        
+        <h1>Hardware Hub</h1>
+        
+         <div class="dropdown">
+            <button class="dropbtn">Themen</button>
+            <div class="dropdown-content">
+                <a href="DRAM.html">DRAM</a>
+                <a href="SRAM.html">SRAM</a>
+                <a href="Vergleich-SD-Ram.html">Vergleich SD/RAM</a>
+                <a href="MRAM.html">M-RAM</a>
+                <a href="RRAM.html">R-RAM</a>
+            </div>
+        </div>
+            
+        <div class="dropdown">
+            <button class="dropbtn">Über uns</button>
+            <div class="dropdown-content">
+                <a href="Info.html">Hardware Hub</a>
+                <a href="Kontakt.html">Kontakt</a>
+                <a href="Quellen.html">Quellen</a>
+            </div>
+        </div>
+        
+        <a  class="header-right">
+            <img id="theme-toggle" src="theme-toggle.png" alt="theme-toggle">
+        </a>
+    </header>
+
+
+    <main>
+        <section>
+            <h2>Was ist DRAM?</h2>
+        </section>
+        <section>
+            <p>
+                DRAM steht für Dynamic Random-Access Memory (Dynamischer Direktzugriffsspeicher).
+                Es ist eine Art von Computer-Arbeitsspeicher, der Daten speichert, solange er mit Strom versorgt wird. 
+                DRAM ist der gängigste Speichertyp, der in den meisten Computern, 
+                Smartphones und vielen anderen elektronischen Geräten als Hauptspeicher (RAM) verwendet wird.
+            </p>
+        </section>
+        <section>
+            <h3>Wie funktioniert DRAM?</h3>
+        </section>
+        <section>
+            <p>
+                Die grundlegende Speichereinheit in DRAM ist eine Speicherzelle, 
+                die aus einem Kondensator und einem Transistor besteht.
+            </p>
+        </section>
+        <section>
+            <ul>
+                <li>
+                    <b>Kondensator:</b> Er speichert die Information als elektrische Ladung. 
+                    Eine Ladung steht für eine "1" (Bit gesetzt), keine Ladung für eine "0" (Bit gelöscht).
+                </li>
+                <li>
+                    <b>Transistor:</b> Er fungiert als Schalter, der den Zugriff auf den Kondensator steuert, 
+                    um Daten zu lesen oder zu schreiben.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <p>
+                Der Name "dynamisch" rührt daher, dass die Kondensatoren ihre Ladung mit der Zeit verlieren. 
+                Um die Daten zu erhalten, müssen die Kondensatoren periodisch aufgefrischt (refreshed) werden. 
+                Dieser Refresh-Vorgang geschieht sehr häufig, typischerweise alle paar Millisekunden, 
+                und ist für den Nutzer transparent.
+            </p>
+        </section>
+        <section>
+            <h3>Warum ist DRAM so wichtig?</h3>
+        </section>
+        <section>
+            <p>
+                DRAM ist entscheidend für die Leistung eines Computers, 
+                da es als Zwischenspeicher zwischen der CPU (Central Processing Unit) 
+                und dem langsameren Massenspeicher (wie einer Festplatte oder SSD) dient. 
+                Wenn die CPU Daten oder Programme benötigt, werden diese zunächst von der Festplatte in den DRAM geladen. 
+                Da DRAM wesentlich schneller ist als der Massenspeicher, 
+                kann die CPU viel schneller auf die benötigten Informationen zugreifen, 
+                was die Gesamtleistung des Systems erheblich verbessert.
+            </p>
+        </section>
+        <section>
+            <h3>Wichtige Merkmale von DRAM:</h3>
+        </section>
+        <section>
+            <ul>
+                <li>
+                    <b>Volatil:</b> Die gespeicherten Daten gehen verloren, sobald die Stromversorgung unterbrochen wird.
+                </li>
+                <li>
+                    <b>Schnell:</b> Deutlich schneller als Festplatten oder SSDs, 
+                    aber langsamer als SRAM (Static Random-Access Memory), 
+                    der oft für Cache-Speicher verwendet wird.
+                </li>
+                <li>
+                    <b>Kostengünstig:</b> Im Vergleich zu anderen schnellen Speichertypen wie SRAM ist DRAM 
+                    relativ günstig herzustellen, was es zur idealen Wahl für den Hauptspeicher großer Kapazitäten macht.
+                </li>
+                <li>
+                    <b>Hohe Dichte:</b> Es kann eine große Menge an Daten auf kleinem Raum speichern.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <p>
+               Zusammenfassend lässt sich sagen, dass DRAM ein fundamentaler Bestandteil moderner Computersysteme ist, 
+               der die schnelle und effiziente Verarbeitung von Daten ermöglicht. 
+            </p>
+        </section>
+        <img id="content-media" src="D-RAM.png" alt="Ein DRAM-Stick" id="Dram-bild">
+    </main>
+
+    <main>
+        <section>
+        <h2>Animation Schreiben</h2>
+        </section>
+        <video id="content-media" src="DRAM-Schreiben-Animation.mp4" controls autoplay loop muted ></video>
+        
+        <section>
+        <h2>Animation Lesen</h2>
+        </section>
+        <video id="content-media" src="DRAM-Auslesen-Animation.mp4" controls autoplay loop muted ></video>
+    </main>
+
+    <main>
+        <h2>Schaltplan DRAM-Zelle</h2>
+            <img id="content-media" src="Aufbau-DRAM.jfif" alt="Aufbau DRAM">
+    </main>
+
+    <main>
+        <h2><b>Aufbau DRAM</b></h2>
+        
+        <ul>
+  
+            <li>
+                <h3>Transistoren (NMOS-Mosfets) → Schaltet bei Spannung am Gate Pin durch</h3> 
+            </li>  
+            <li>
+                <h3>Wordline → Steuert den Zugriff auf gewünschte Zelle</h3> 
+            </li>  
+            <li>
+                <h3>Bitleitung → Über sie wird der zu speichernde Wert geliefert (0/1) & sie ist am Ausleseprozess beteiligt</h3> 
+            </li> 
+            <li>
+                <h3>Kondensator → Speichert die Ladung (0/1)</h3> 
+            </li> 
+            
+            
+
+            <li>
+                <h3>Amplifier → Ist Verarbeitungselement der Bitline beim Ausleseprozess. Erkennt minimale Spannungsunterschiede (Anstieg & Abfall von Spannung) und gibt dann Wert aus</h3>
+                <p>Wenn BL ↑ = Output 1</p>
+                <p>Wenn BL ↓ = Output 0</p>
+
+            </li>
+            <img src="Amplifier-Bild.png" alt="Bild Amplifier" class="amplifier-img">
+        </ul>
+
+
+
+    </main>
+
+
+    <main>
+        <h2>Schreibprozess auf DRAM-Zelle</h2>
+        
+        <section>
+            <h3>Adresse auswählen:</h3>
+                <p>Ein Speichercontroller wählt die Zielzelle aus</p>
+                <p>Die zugehörige Word-Line (WL) wird aktiviert (High)</p>
+        </section>
+
+        <section>
+            <h3>Zugriffstransistor aktivieren:</h3>
+                <p>Der Zugriffstransistor wird aktiviert und lässt Strom durch</p>
+                <p>Der Kondensator der Zelle ist anschließend mit Bit-Line (BL) verbunden</p>
+        </section>
+
+        <section>
+            <h3>Schreibmodus aktivieren</h3>
+                <p>Zugriff auf Zelle wird aktiviert</p>
+        </section>
+
+        <section>
+            <h3>Daten auf Bit-Line legen:</h3>
+                <p>Der gewünschte Wert wird durch ein Write-Signal und einen Schreibverstärker auf die Bit-Line gelegt</p>
+                <p>1 (BL-hohes Potenzial) → Kondensator wird geladen</p>
+                <p>0 (BL-niedriges Potenzial) → Kondensator wird entladen</p>
+        </section>
+
+        <section>
+            <h3>Ladung übernehmen:</h3>
+                <p>Kondensator nimmt nun den Spannungszustand der BL an</p>
+        </section>
+
+        <section>
+            <h3>Word-Line deaktivieren:</h3>
+                <p>Die Word-Line wird auf Low gesetzt</p>
+                <p>Transistor sperrt und die Ladung wird isoliert bzw. gespeichert</p>
+                <p>Die Ladung bleibt nur kurzzeitig ohne Refresh-Zyklen (ca. alle 64ms) gespeichert, da die Spannung am Kondensator über die Zeit abfällt.</p>
+        </section>
+
+
+
+    </main>
+
+    <main>
+        <h2>Auslesen DRAM-Zelle</h2>
+            <section>
+                <h3>Adresse auswählen:</h3>
+                    <p>Der Speichercontroller wählt die gewünschte Zelle aus</p>
+                    <p>Die entsprechende Word-Line wird aktiviert</p>
+            </section>
+
+            <section>
+                <h3>Zugriffs-Transistor öffnen:</h3>
+                    <p>Zugriffs-Transistor lässt Spannung durch</p>
+                    <p>Kondensator ist nun mit Bit-Line verbunden</p>
+            </section>
+
+            <section>
+                <h3>Ladung fließt zur Bit-Line:</h3>
+                    <p>Die kleine Ladung vom Kondensator beeinflusst nun die Ladung der BL</p>
+                    <ul>
+                        <li>Geladener Kondensator (1) → Spannung an BL steigt leicht</li>
+                        <li>Ungeladener Kondensator (0) → Spannung an BL bleibt niedrig</li>
+                    </ul>
+            </section>
+
+            <section>
+                <h3>Sense Amplifier verstärkt das Signal:</h3>
+                    <p>Der Sense-Amplifier erkennt den winzigen Spannungsunterschied und verstärkt ihn zu einer klaren 0 oder 1</p>
+            </section>
+
+            <section>
+                <h3>Zelle nach dem Auslesen:</h3>
+                    <p>Durch das auslesen der Zelle wird die Ladung am Kondensator verändert bzw. die Zelle bricht zusammen</p>
+                    <p>Es wird sofort ein Refresh-Zyklus durchgeführt, damit sich die Zelle wieder im Ausgangszustand befindet</p>
+
+
+            </section>
+
+    
+    </main>
+
+    
+
+    <div class="hover-text">
+    <main>
+        <a href="Index.html">
+            <button class="large-round-hover-btn">
+                <span>Zurück zur Startseite</span>
+            </button>
+        </a>
+        <a href="SRAM.html">
+            <button class="large-round-hover-btn">
+                <span>Weiter zum SRAM</span>
+            </button>
+        </a>
+    </main>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Hardware Hub. All rights reserved.</p>
+        <section>
+            <h3>Contact</h3>
+            <p>Email: benedikt.spitzmaus@gmail.com</p>
+        </section>
+        <section>
+            <h3>About Us</h3>
+            <p>Eine Hardware Info Seite.</p>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

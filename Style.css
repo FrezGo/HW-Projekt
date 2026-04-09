@@ -1,0 +1,384 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* Das vorherige Hintergrund-Gradient wird durch das Bild ersetzt oder ergänzt */
+    background-image: url('berg-hell.jpg'); 
+    background-size: cover; /* Stellt sicher, dass das Bild den gesamten Bereich abdeckt */
+    background-position: center; /* Zentriert das Bild */
+    background-repeat: no-repeat; /* Verhindert, dass das Bild gekachelt wird */
+    background-attachment: fixed; /* Fixiert das Hintergrundbild beim Scrollen */
+    color: #202020;
+    padding-top: 90px;
+}
+
+body.dark-mode {
+    /* Optional: Anderes Hintergrundbild für den Dark Mode */
+    background-image: url('berg-dunkel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.822); /* Schwarz mit 80% Deckkraft (20% Transparenz) */
+    backdrop-filter: blur(5px);
+    color: #fff;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+section {
+    line-height: 1.5;
+}
+
+#logo {
+    width: 70px;
+    height: auto;
+    margin-left: 20px;
+    margin-right: 15px;
+    border-radius: 8px;
+}
+            
+#theme-toggle {
+    width: 60px;
+    height: auto;
+    display: block;
+}
+        
+.header-right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+header h1 {
+    margin-left: 0;
+}
+    
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    /* background-color: #ffffff; Ursprünglicher solider Hintergrund im Light Mode */
+    background-color: rgba(255, 255, 255, 0.65); /* Leicht transparenter weißer Hintergrund für den Light Mode */
+    backdrop-filter: blur(5px); /* Unschärfeeffekt für den Main-Bereich selbst (wirkt auf das Body-Hintergrundbild) */
+    box-shadow: 0 0 10px rgba(61, 61, 61, 0.432);
+    border-radius: 15px;
+    transition: color 0.5s ease, background-color 0.5s ease;
+    overflow-wrap: break-word; /* Verhindert, dass langer Text (z.B. URLs) über den Rand hinausragt */
+}
+        
+body.dark-mode main {
+    /* background-image: linear-gradient(135deg, #2b2a2a, #212324); Ursprünglicher Verlauf */
+    background-color: rgba(30, 30, 30, 0.65); /* Dunkler, leicht transparenter Hintergrund für den Dark Mode */
+    backdrop-filter: blur(8px); /* Auch hier Unschärfeeffekt für Konsistenz, ggf. etwas stärker */
+}
+
+#feedback {
+    border-radius: 15px;
+    padding: 25px;
+    background-color:#beeaff;
+    display: block;
+    width: 100%;
+    min-height: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 0px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+    resize: none;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body.dark-mode #feedback {
+    background-image: linear-gradient(135deg, #064457, #04469b);
+    color: #fff;
+}
+
+#feedback:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transform: scale(1.01);
+}
+
+#feedback:focus {
+    outline: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.479);
+    transform: scale(1.01);
+}
+
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background: rgba(0, 0, 0, 0.75); /* Schwarz mit 80% Deckkraft (20% Transparenz) */
+    backdrop-filter: blur(5px);
+    color: #fff;
+    width: 100%;
+}
+           
+.send-button {
+    border-radius: 15px;
+    padding: 10px;
+    background-image: linear-gradient(135deg, #11f7ff, #df40ff);
+    border: 0px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-size: medium;
+    font-family: Lucida Console, Monaco, monospace;
+    font-weight: bold;
+}
+
+send-button:hover {
+   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+   transform: scale(1.05);
+}
+
+.hover-text a {
+    color: #000000;
+    text-decoration: none;
+}
+        
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+        
+.large-round-hover-btn {
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 15px; 
+    padding: 25px;
+    background-color: #c8eeff; /* A nice blue */
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    border: 0px solid #1e78a0;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.3s ease, box-shadow 0.3s ease, color 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px auto 15px auto; /* Center block element (button) and add margin */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.110);
+}
+        
+body.dark-mode .large-round-hover-btn {
+    background-color: #0b232b;
+    color: #fff;
+}
+
+.large-round-hover-btn:hover {
+    background: rgb(91, 162, 255); 
+    transform: translateY(-5px) scale(1.03); /* Lift and slightly enlarge */
+    box-shadow: 0 8px 16px rgba(46, 85, 136, 0.397);
+}
+        
+body.dark-mode .large-round-hover-btn:hover {
+    color: #000000;
+    background-color: #5297b4;
+    box-shadow: 0 8px 14px rgba(82, 151, 180, 0.3);
+}
+
+.large-round-hover-btn:active {
+    transition: transform 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
+    transform: scale(0.995);
+    background: #7ccbff;
+    box-shadow: none;
+}
+
+.large-round-hover-btn span {
+    /* Additional styling for text within button if needed */
+}
+        
+/* styles dropdown menu */
+.dropdown {
+    position: relative; 
+}
+        
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0 5px;
+    border-radius: 20px; /* Optional: Wieder hinzugefügt für abgerundete Ecken */
+}
+        
+.dropdown .dropbtn:hover{
+    color: #9ac4d6;
+    transition: color 0.3s ease;
+}
+
+.dropdown-content {
+    /*display: none;*/
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    position: absolute;
+    background: rgba(189, 219, 226, 0.897); /*leicht transparent*/
+    
+    z-index: 1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px; /* Bestehender Radius für den Container */
+    left: 0;
+    top: 100%;
+    /*Padding für den Container, um Abstand für die Links zu schaffen */
+    padding: 5px; /* z.B. 5px rundum */
+    box-sizing: border-box; /* Stellt sicher, dass Padding die min-width nicht sprengt */
+}
+        
+body.dark-mode .dropdown-content {
+    background: rgba(37, 37, 37, 0.9); /*leicht transparent*/
+}
+
+.dropdown-content a {
+    float: none;
+    color: rgb(0, 0, 0);
+    /* Das Padding hier bestimmt den Abstand des Textes zum Rand des Hover-Effekts */
+    padding: 10px 12px; /* Leicht angepasst für ein ausgewogenes Verhältnis mit dem Container-Padding */
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    /* Wichtig: Damit der border-radius des Hover-Effekts sauber dargestellt wird */
+    /* Man könnte hier auch border-radius setzen, wenn die Links selbst schon abgerundet sein sollen */
+    
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease-in-out; 
+}
+        
+body.dark-mode .dropdown-content a {
+    color: #fff;
+}
+        
+.dropdown-content a:hover {     /*Howereffect des dropdown content*/
+    background-image: linear-gradient(90deg, #b2daff 20%, #63b4ff 100%); 
+    color: #000000; 
+    border-radius: 10px; 
+}
+
+body.dark-mode .dropdown-content a:hover {
+    background-image: linear-gradient(90deg, #1b86b1 20%, #093f72 100%);
+    color: #fff;
+}
+
+/*Animation AI*/
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    /* transition-delay: 0s; ist hier korrekt, um sicherzustellen, dass die in .dropdown-content definierten */
+    /* Transitionen für opacity und transform beim Hovern ohne Verzögerung starten. */
+}
+        
+/* Zielzustand für Item-Animation und gestaffelte Verzögerungen */
+.dropdown:hover .dropdown-content a {
+    opacity: 1;
+    transform: translateY(0);
+}
+.dropdown:hover .dropdown-content a:nth-child(1) {
+    transition-delay: 0.05s; /* Erster Link startet nach 50ms */
+}
+.dropdown:hover .dropdown-content a:nth-child(2) {
+    transition-delay: 0.1s;  /* Zweiter Link startet nach 100ms */
+}
+.dropdown:hover .dropdown-content a:nth-child(3) {
+    transition-delay: 0.15s; /* usw. */
+}
+.dropdown:hover .dropdown-content a:nth-child(4) {
+    transition-delay: 0.2s;
+}
+.dropdown:hover .dropdown-content a:nth-child(5) {
+    transition-delay: 0.25s;
+}
+        
+
+#video {
+    border-radius: 15px;
+    display: block;
+    width: 100%;
+}
+
+table{
+    font-size: 15px;
+    border-collapse: separate; /* Wichtig für border-radius */
+    border-spacing: 0;
+    background-color: #6d6d6d;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    overflow: hidden; /* Stellt sicher, dass die Ecken der inneren Elemente abgeschnitten werden */
+}
+
+td,th{
+    padding: 25px 55px;
+    text-align: center;
+    /*border: 2px solid rgb(255, 255, 255);*/
+}
+
+thead {
+    box-shadow: 0 3px 6px rgb(3, 15, 54);
+    background-color: rgb(61, 96, 200);
+}
+
+tr:nth-child(even){
+    background-color: #8a8b8b;
+}
+
+#content-media {
+    border-radius: 15px;
+    display: block;
+    width: 100%;
+}
+
+.sram-schaltkreis {
+    display: flex;
+    gap: 80px;         
+    justify-content: start; 
+    margin-bottom: 20px;
+    border-radius: 15px; 
+}
+
+.sram-schaltkreis img {
+    width: 350px;      
+    height: auto;
+    border-radius: 15px;
+}
+
+.amplifier-img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; 
+    border-radius: 15px;
+}
+
+#grüner-hacken {
+    height: auto;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

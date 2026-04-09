@@ -1,0 +1,347 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAM-Speicher verstehen: D-RAM, S-RAM, M-RAM und R-RAM detailliert erklärt</title>
+    <meta name="description" content="Tauche tief ein in die Welt der RAM-Speicher! Erfahre alles über D-RAM, S-RAM, M-RAM und R-RAM, ihre Funktionsweisen, Vor- und Nachteile sowie Anwendungen in der modernen Technik.">
+    <meta name="keywords" content="DRAM, SRAM, MRAM, RRAM, RAM, Arbeitsspeicher, Speichertechnologien, flüchtiger Speicher, nicht-flüchtiger Speicher, Computer Hardware, RAM Vergleich, Speicherzukunft, NVM, Non-Volatile Memory, Dynamic RAM, Static RAM, Magnetoresistive RAM, Resistive RAM">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <!-- WICHTIG: relativer Pfad für Bild, wenn es im selben Projektordner liegt -->
+        <a href="Index.html">
+            <img id="logo" src="HWLogo.png" alt="Hardware Hub Logo">
+        </a>
+        
+        <h1>Hardware Hub</h1>
+        
+         <div class="dropdown">
+            <button class="dropbtn">Themen</button>
+            <div class="dropdown-content">
+                <a href="DRAM.html">DRAM</a>
+                <a href="SRAM.html">SRAM</a>
+                <a href="Vergleich-SD-Ram.html">Vergleich SD/RAM</a>
+                <a href="MRAM.html">M-RAM</a>
+                <a href="RRAM.html">R-RAM</a>
+            </div>
+        </div>
+            
+        <div class="dropdown">
+            <button class="dropbtn">Über uns</button>
+            <div class="dropdown-content">
+                <a href="Info.html">Hardware Hub</a>
+                <a href="Kontakt.html">Kontakt</a>
+                <a href="Quellen.html">Quellen</a>
+            </div>
+        </div>
+        
+        <a  class="header-right">
+            <img id="theme-toggle" src="theme-toggle.png" alt="theme-toggle">
+        </a>
+    </header>
+
+    <main>
+        <section>
+            <h2><b>SRAM</b></h2>
+        </section>
+        <section>
+            <p>
+                SRAM steht für Static Random Access Memory. Es ist eine Art von Computerarbeitsspeicher (RAM), 
+                die für ihre hohe Geschwindigkeit bekannt ist. Im Gegensatz zu DRAM (Dynamic RAM), 
+                das die Daten regelmäßig auffrischen muss, um sie zu behalten, benötigt SRAM keine periodische Auffrischung, 
+                solange die Stromversorgung aufrechterhalten wird. Daher kommt der Begriff "statisch".  
+            </p>
+        </section>
+        <section>
+            <h3><b>Speicherung der Daten:</b></h3>
+        </section>
+        <section>
+            <ul>
+                <li>
+                    SRAM speichert Daten mithilfe von Transistoren (normalerweise 4 bis 6 Transistoren pro Speicherzelle, oft MOSFETs) in einer Flip-Flop-Konfiguration.
+                </li>
+                <li>
+                    Eine Zelle besteht aus einem Flip Flop, welches zwei stabile Zustände annehmen kann (0 oder 1 repräsentiert) 
+                    und in diesem Zustand verbleibt, bis ein externer Impuls ihn ändert.
+                </li>
+                <li>
+                    Da die Flip-Flops die Daten "halten", solange Strom anliegt, ist keine Auffrischung nötig.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3><b>Geschwindigkeit:</b></h3>
+        </section>
+        <section>
+            <ul>
+                <li>
+                    SRAM ist deutlich schneller als DRAM. Das liegt daran, dass es keine Lade- und Entladezyklen von Kondensatoren gibt und keine Auffrischung (Refresh) 
+                    nötig ist, was Zugriffszeiten verzögern würde.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3><b>Kosten und Komplexität:</b></h3>
+        </section>
+        <section>
+            <ul>
+                <li>
+                    Da jede SRAM-Zelle mehrere Transistoren benötigt, ist sie viel komplexer und größer als eine DRAM-Zelle (DRAM: nur einen Transistor und einen Kondensator benötigt).
+                </li>
+                <li>
+                    Dies führt dazu, dass SRAM pro Bit teurer ist als DRAM. 
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3><b>Anwendungen:</b></h3>
+        </section>
+        <section>
+            <ul>
+                <li>
+                    Aufgrund seiner Geschwindigkeit und Kosten wird SRAM typischerweise als Cache-Speicher in Prozessoren (CPU-Cache, L1, L2, L3 Cache) verwendet. Hier werden Daten gespeichert, 
+                    auf die der Prozessor sehr schnell zugreifen muss, um Engpässe bei der Datenübertragung zum langsameren Hauptspeicher (DRAM) zu vermeiden.
+                </li>
+                <li>
+                    Auch in Spezialanwendungen, die extrem schnelle Zugriffszeiten erfordern (z.B. in Routern, Hochleistungsservern), kommt SRAM zum Einsatz.
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h3><b>Flüchtigkeit (Volatile Memory):</b></h3>
+        </section>
+        <section>
+            <ul>
+                <li>
+                    SRAM ist, wie DRAM, ein flüchtiger Speicher. Das bedeutet, dass die Daten verloren gehen, sobald die Stromversorgung unterbrochen wird.
+                </li>
+            </ul>
+        </section>
+        <img id="content-media" src="SRAM-CACHE.jpg" alt="CPU-Architektura">
+    </main>
+
+    <main>
+        <section>
+        <h2>Animation Schreiben</h2>
+        </section>
+        <video id="content-media" src="SRAM-Schreiben-Animation.mp4" controls loop autoplay muted></video>
+
+        <section>
+        <h2>Animation Auslesen</h2>
+        </section>
+        <video id="content-media" src="SRAM-Auslesen-Animation.mp4" controls loop autoplay muted></video>
+    </main>
+    
+    <main>
+        <h2>Allgemeiner Schaltkreis & vereinfachte Version</h2>
+        <div class="sram-schaltkreis">
+            <img src="SRAM-Aufbau.png" alt="SRAM Schaltkreis 1">
+            <img src="vereinfacht-SRAM.png" alt="SRAM Schaltkreis 2">
+        </div>
+    </main>
+
+    <main>
+        <section>
+        <h2><b>Aufbau SRAM</b></h2>
+
+        
+        <ul>
+  
+            <li>
+                <h3>Transistoren (NMOS-Mosfets) → M1 & M3 & M5 & M6</h3> 
+            </li>  
+        
+            <li>
+                <h3>Transistoren (PMOS-Mosfets) → M2 & M4</h3>
+            </li>   
+
+            <li>
+                <h3>VDD → Spannungsquelle für Stromkreis, um Signal stabil zu speichern</h3>   
+            </li>
+
+            <li>
+                <h3>Wordline(WL) → Steuert den Zugriff auf gewünschte Zelle</h3>   
+            </li>
+
+            <li>
+                <h3>Bitline (BL) → Über sie wird zu speichernder Wert gelierfert (0/1) & ist am Ausleseprozess beteiligt</h3>   
+            </li>
+
+            <li>
+                <h3>Bitline invertiert → Ist am Ausleseprozess beteiligt</h3>
+            </li>
+
+
+
+            <li>
+                <h3>Amplifier → Ist Verarbeiteungselement der Bitlines beim Ausleseprozess. Erkennt minmale Spannungsunterschiede (Anstieg & Abfall von Spannung) und gibt dann Wert aus</h3>
+                <p>Wenn BL ↑ & invBL ↓ = Output 1</p>
+                <p>Wenn BL ↓ & invBL ↑ = Output 0</p>
+
+            </li>
+
+        </ul>
+     <img src="Amplifier-Bild.png" alt="Bild Amplifier" class="amplifier-img">
+        </section>
+
+    </main>
+
+    <main>
+ 
+        <section>
+            <h2>Auf Zelle schreiben</h2>
+        </section>
+        <section>
+            <h3>Adresse auswählen (Adressierung):</h3>
+        </section>
+        <section>
+            <p>
+                Der Speichercontroller oder Prozessor legt die Adresse der SRAM-Zelle an, in die geschrieben werden soll. 
+                Die Adressdecoder wandeln diese Adresse um und aktivieren die entsprechende Wordline (WL). 
+            </p>
+            <p>
+                Die Wordline ist eine Steuerleitung, die mit den Gate-Anschlüssen der beiden Zugriffstransistoren der ausgewählten Zelle verbunden ist.
+            </p>
+            <p>
+                Durch Aktivierung der WL (z.B. auf VDD-Potenzial) werden die Zugriffstransistoren leitend geschaltet.
+            </p>
+        </section>
+        
+        <section>
+            <h3>Schreibmodus aktivieren:</h3>
+        </section>
+        <section>
+            <p>
+                Ein Write Signal wird aktiviert, um dem SRAM-Chip mitzuteilen, dass ein Schreibvorgang stattfinden soll.
+            </p>
+        </section>
+
+        <section>
+            <h3>Daten auf die Bitlines legen:</h3>
+        </section>
+        <section>
+            <p>
+                Die Daten, die in die Zelle geschrieben werden sollen (entweder eine "0" oder eine "1"), werden auf die Bitlines (BL) und Bitline-inv (BLinv) gelegt. 
+                Diese beiden Leitungen führen entgegengesetzte Spannungen. 
+            </p>
+        </section>
+
+        <section>
+        <ul>
+            <li>
+                <h4>Um eine "0" zu schreiben:</h4>
+            </li>
+            <ul>
+                <p>BL wird auf "low" (0V) gesetzt und BLinv auf "high" (durch VDD).</p>
+            </ul>
+            <li>
+                <h4>Um eine "1" zu schreiben:</h4>
+            </li>
+            <ul>
+                <p>BL wird auf "high" (VDD) gesetzt und BLinv auf "low" (0V).</p>
+            </ul>
+        </ul>
+        <p>Diese Spannungen werden von den "Write Driver"-Schaltkreisen bereitgestellt.</p>
+        </section>
+
+        <section>
+            <h3>Daten in die Zelle schreiben:</h3>
+        </section>
+        <section>
+            <p>
+                Da die Wordline (WL) aktiv ist und die Zugriffstransistoren leitend sind, 
+                sind die internen Knoten des SRAM-Latches (normalerweise als Q und Qinv bezeichnet) mit den Bitlines (BL und BLinv) verbunden. 
+            </p>
+            <p>
+                Die auf die Bitlines gelegten Spannungen sind nun stärker als die im Latch gespeicherte alte Information. Sie "zwingen" das Latch in den gewünschten neuen Zustand. 
+            </p>
+            <p>
+                Zum Beispiel, wenn eine "0" geschrieben wird und die Zelle vorher eine "1" gespeichert hat.
+            </p>
+            <p>
+                Die Bitline (BL) zieht den Knoten Q auf "low", während BLinv den Knoten Qinv auf "high" zieht. 
+                Die Rückkopplungsschleife der Inverter im Latch verstärkt diesen Zustand, bis die Zelle stabil in ihrem neuen Zustand ist. 
+            </p>
+        </section>
+
+        <section>
+            <h3>Deaktivierung:</h3>
+        </section>
+        <section>
+            <p>
+                Nachdem die Daten erfolgreich in die Zelle geschrieben wurden und das Latch stabil ist, wird die Wordline (WL) wieder deaktiviert (z.B. auf 0V). 
+            </p>
+            <p>
+                Dadurch werden die Zugriffstransistoren wieder gesperrt und die SRAM-Zelle wird von den Bitlines isoliert, wodurch der gespeicherte Zustand erhalten bleibt. 
+            </p>
+            <p>
+                Das Write Enable (WE) Signal wird ebenfalls deaktiviert.
+            </p>
+        </section>
+    </main>
+
+    <main>
+        <section>
+            <h2>Auslesen einer SRAM-Zelle</h2>
+        </section>
+
+        <section>
+            <h3>Adressierung:</h3>
+                <p>Der Speichercontroller aktiviert die gewünschte Adresse</p>
+                <p>Die zugehörige Word-Line (WL) wird auf High gesetzt</p>
+                <p>Dadurch werden die Zugriffs-Transistoren (Pass-Gates) leitend</p>
+        </section>
+
+        <section>
+            <h3>Verbindung zur Bit-Line:</h3>
+                <p>Die beiden Speicher-Knoten der Flip-Flop-Zelle werden mit den Bit-Lines (BL und /BL) verbunden.</p>
+        </section>
+
+        <section>
+            <h3>Auslesen:</h3>
+                <p>Die gespeicherte Information (1 oder 0) liegt nun auf den Bitlines (BL & invBL)</p>
+                <p>Sense Amplifier erkennt den Spannungunterschied von BL & invBL schnell und verstärkt ihn, damit man die Daten zuverlässig gelesen werden können </p>
+                <p>Beispielsweise BL = 1 & invBL = 0 → resultiert ein High</p>
+        </section>
+
+        <section>
+            <h3>Word-Line deaktivieren:</h3>
+                <p>Word-Line wird nach dem Prozess wieder deaktiviert</p>
+                <p>Zelle ist wieder in ihrem Zustand wie vor dem auslesen, anderst wie bei DRAM</p>
+        </section>
+
+
+    </main>
+
+    <div class="hover-text">
+    <main>
+        <a href="Index.html">
+            <button class="large-round-hover-btn">
+                <span>Zurück zur Startseite</span>
+            </button>
+        </a>
+        <a href="Vergleich-SD-Ram.html">
+            <button class="large-round-hover-btn">
+                <span>Weiter zum Vergleich</span>
+            </button>
+        </a>
+    </main>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Hardware Hub. All rights reserved.</p>
+        <section>
+            <h3>Contact</h3>
+            <p>Email: benedikt.spitzmaus@gmail.com</p>
+        </section>
+        <section>
+            <h3>About Us</h3>
+            <p>Eine Hardware Info Seite.</p>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

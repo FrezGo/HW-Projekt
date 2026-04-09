@@ -1,0 +1,268 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAM-Speicher verstehen: D-RAM, S-RAM, M-RAM und R-RAM detailliert erklärt</title>
+    <meta name="description" content="Tauche tief ein in die Welt der RAM-Speicher! Erfahre alles über D-RAM, S-RAM, M-RAM und R-RAM, ihre Funktionsweisen, Vor- und Nachteile sowie Anwendungen in der modernen Technik.">
+    <meta name="keywords" content="DRAM, SRAM, MRAM, RRAM, RAM, Arbeitsspeicher, Speichertechnologien, flüchtiger Speicher, nicht-flüchtiger Speicher, Computer Hardware, RAM Vergleich, Speicherzukunft, NVM, Non-Volatile Memory, Dynamic RAM, Static RAM, Magnetoresistive RAM, Resistive RAM">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    <header>
+        <!-- WICHTIG: relativer Pfad für Bild, wenn es im selben Projektordner liegt -->
+        <a href="Index.html">
+            <img id="logo" src="HWLogo.png" alt="Hardware Hub Logo">
+        </a>
+        
+        <h1>Hardware Hub</h1>
+        
+         <div class="dropdown">
+            <button class="dropbtn">Themen</button>
+            <div class="dropdown-content">
+                <a href="DRAM.html">DRAM</a>
+                <a href="SRAM.html">SRAM</a>
+                <a href="Vergleich-SD-Ram.html">Vergleich SD/RAM</a>
+                <a href="MRAM.html">M-RAM</a>
+                <a href="RRAM.html">R-RAM</a>
+            </div>
+        </div>
+            
+        <div class="dropdown">
+            <button class="dropbtn">Über uns</button>
+            <div class="dropdown-content">
+                <a href="Info.html">Hardware Hub</a>
+                <a href="Kontakt.html">Kontakt</a>
+                <a href="Quellen.html">Quellen</a>
+            </div>
+        </div>
+        
+        <a  class="header-right">
+            <img id="theme-toggle" src="theme-toggle.png" alt="theme-toggle">
+        </a>
+    </header>
+
+    <main>
+    <section>
+    <h2>RRAM</h2>
+    
+            <p>RRAM (Resistiv Random Access Memory) ist eine Speichertechnologie, welche zu den modernen Speichertechnolgien gehört (wie MRAM). Es handelt sich um einen nicht flüchtigen Speicher (Daten blieben nach Stromabbruch erhalten), welches Widerstandsänderungen in einem Material zur Datenspeicherung nutzt. </p>
+        
+        <h3>Speicherung der Daten:</h3>
+            <p>RRAM speichert Daten, indem es den elektrischen Widerstand eines Materials verändert – es gibt typischerweise zwei Zustände: einen hohen Widerstand (entspricht „0“) und einen niedrigen Widerstand (entspricht „1“).</p>
+            <p>Die Speicherzelle besteht meist aus einer Metallschicht, einer isolierenden Oxidschicht (z.B. HfO₂ oder TiO₂) und einer zweiten Elektrode.</p>
+            <p>Durch Anlegen einer Spannung wird ein leitender Filamentpfad durch das Isolationsmaterial erzeugt oder wieder aufgelöst, was den Widerstand verändert.</p>
+            <p>Da die physikalische Änderung bestehen bleibt, ist keine kontinuierliche Energiezufuhr nötig, um den Zustand zu speichern.</p>
+        
+        <h3>Geschwindigkeit:</h3>
+            <p>RRAM ist von der Geschwindigkeit etwa mit DRAM</p>
+
+        <h3>Kosten und Komplexität</h3>
+            <p>RRAM-Zellen sind sehr leicht aufgebaut und benötigen daher deutlich weniger Platz als z.B. SRAM oder DRAM</p>
+            <p>Die Technologie steckt aber noch in der Entwicklung, daher können die Kosten für Produktion und Erwerb relativ teuer sein</p>    
+        
+        <h3>Anwendungen:</h3>
+            <p>RRAM wird in mobilen Geräten, Sensoren, Computerelementen usw. verbaut</p>
+            <p>Attraktiv für Energiesparendeprozesse, da bei Stromabbruch Daten gespeichert bleiben</p>
+        
+            <h3>Zukunft:</h3>
+            <p>In der Zukunft könnte RRAM sogar Speicherkonstrukte wie DRAM ersetzen, aber es ist erst noch in der entwicklung und Forschung</p>
+        
+        <h3>Flüchtigkeit:</h3>
+            <p>RRAM ist nicht flüchtig, dass heißt Speicherdaten bleiben nach Stromunterbrechung trotzdem gespeichert </p>
+            
+    </section>
+    </main>
+    
+    <main>
+            <img id="content-media" src="RRAM -Aufbau.png" alt="Schaltplan RRAM">
+    </main>
+
+    <main>
+    <section>
+        <h2>Aufbau RRAM-Zellen</h2>
+            <ul>
+                <li>
+                    <h3>Obere Elektrode (oft Platin)→ Legt Spannung an</h3>
+                </li>
+                <li>
+                    <h3>Oxidschicht (oft Hafniumoxid) → Ändert den Widerstand</h3>
+                </li>
+                <li>
+                    <h3>Untere Elektrode (oft Platin) → Strom fließt dort ab</h3>
+                </li>
+                <li>
+                    <h3>Wordline(WL) → Steuert den Zugriff auf gewünschte Zelle </h3>
+                </li>
+                <li>
+                    <h3>Transistor → Verbindet Stromzufuhr mit der oberen Elektrode</h3>
+                </li>
+                <li>
+                    <h3>Bitline → Liegt an unterer Elektrode und ist am Ausleseprozess beteiligt</h3>
+                </li>
+            </ul>
+    </section>    
+    </main>
+    <main>
+        <h2>Schreibprozess einer 1 RRAM-Zelle</h2> 
+        
+        <section>
+            <h3>Die Ausgangslage:</h3>
+                <p>Die Oxidschicht (z.B. HfO₂) ist ein Ionenkristall → Sauerstoffionen (O²⁻) sitzen fest im Gitter.</p>
+                 <p>Ohne äußeres Feld bleiben sie dort → Material ist isolierend </p>
+        </section>
+        
+        <section>
+            <h3>Spannung anlegen → Starkes elektrisches Feld entsteht:</h3>
+                <p>Obere Elektrode: positiv geladen</p>
+                <p>Untere Elektrode (z.B. Pt): Masse / negativ</p>
+                <p>→ Es entsteht ein elektrisches Feld, typischerweise > 1 Megavolt/cm (1.000.000 V), damit die ioniserung (Ionen aus dem Gitter herausbrechen können) funktioniert</p>
+        </section>
+        
+        <section>
+            <h3>Ionenbewegung aus Gitter lösen:</h3>
+                <p>Das Feld wirkt auf die negativ geladenen Sauerstoffionen (O²⁻) im Ionengitter</p>
+                <p>Die Sauerstoffionen werden aus dem Gitter herausgelöst, aufgrund der Kraft des elektrischen Feldes</p>
+        </section>
+        
+        <section>
+            <h3>Ionen wandern zur positiven Elektrode:</h3>
+                <p>Die negativ geladenen Sauerstoffionen wandern nun zur positiven oberen Elektrode, da negative Ladung und positiver Ladung angezogen wird</p>
+        </section>
+        
+        <section>
+            <h3>Es bleiben Sauerstoffleerstellen zurück:</h3>
+                <p>Jedes gelöste O²⁻-Ion hinterlässt eine sogenannte Sauerstoffleerstelle im Gitter</p>
+                <p>Diese Leerstellen sind elektrisch positv geladen (2+)</p>
+                <p>So ziehen diese positven Leerstellen negative Elektronen an, so entsteht ein leitfähiger Pfad, weil die Elektronen von einer Leerstelle zur nächsten springen können</p>
+        </section>
+        
+        <section>
+            <h3>Leitfähiger Pfad entsteht (bzw. Filament):</h3>
+                <p>Dieser Pfad, durch welchen Elektronen fließen (ein Strom mit gerinem Widerstand), wird als logische 1 gewertet</p>
+        </section>
+    </section>
+    </main>
+    <main>
+    <section>
+        <h2>Schreibprozess einer 0 RRAM-Zelle</h2>
+
+            
+        <section>
+            <h3>Spannung umgekehrt anlegen (Polarität vertauschen):</h3>
+                <p>Obere Elektrode: negativ</p>
+                <p>Untere Elektrode: positiv oder Masse</p>
+        </section>
+        
+        <section>
+            <h3>Elektrisches Feld wirkt in Gegenrichtung:</h3>
+                <p>Die Richtung des elektrischen Felds kehrt sich um</p>
+                <p>Jetzt werden die O²⁻-Ionen zurück in das Oxidgitter gezogen</p>
+        </section>
+        
+        <section>
+            <h3>Filament wird unterbrochen:</h3>
+                <p>Die zurückwandernden Sauerstoffionen (O²⁻) oxidieren den leitfähigen Pfad:</p>
+                <ul>
+                    <li>
+                        <p>Die Sauerstoff-Leerstellen werden repariert</p>
+                    </li>
+                    <li>
+                        <p>Dadurch entsteht ein nicht-leitender Bereich im Filament</p>
+                    </li>
+                    <li>
+                        <p>Der Kanal ist nun nicht mehr durchgängig leitfähig</p>
+                    </li>
+                </ul>
+        </section>
+        
+        <section>
+
+            <h3>Elektronenfluss wird gestoppt:</h3>
+                <p>Der Stromfluss ist nun stark eingeschränkt</p>
+                <p>Die Zelle hat jetzt einen hohen Widerstand → logisch „0“</p>
+        </section>
+        <section>
+            <h3>Warum gehen bei diesem Prozess die Ionen nicht zur unteren Elektrode?</h3>
+                <p>Das elektrische Feld ist viel schwächer als beim Schribprozess der 1, so ist es energetisch günstiger für die Ionen die Leerstellen wieder zu besetzen</p>
+        </section>
+    
+     </section>
+    </main>
+    <main>
+        <img id="content-media" src="RRAM-Veranschaulichung1.png" alt="RRAM Ablauf" >
+    </main>
+    <main>
+    <section>
+        <h3>Kleine Spannung anlegen(Read-Voltage):</h3>
+            <p>Es wird eine kleine Spannung an die obere Elektrode angelegt (0,1-0,5 V) </p>
+            <p>Die Spannung ist sehr klein, damit keine Ionisierung bzw. Veränderung stattfindet</p>
+            
+        <h3>Stromfluss messen:</h3>
+            <p>Je nachdem, wie hoch oder niederig der Widerstand ist, ergibt sich ein anderer Stromfluss</p>
+
+        <h3>Stromfluss messen:</h3>
+            <p>Ein Steuerungssystem bestimmt die Stromstärke</p>
+            <p>Anschließend wird durch das Ohmsche Gestz der Widerstand berechnet (R = V/I) </p>
+
+        <h3>Logische Zustand interpretieren:</h3>
+            <p>Wenn Widerstand niedrig → Filament (Leitfähiger Pfad) vorhanden → logisch „1“</p>
+            <p>Wenn Widerstand hoch → kein Filament (Leitfähiger Pfad) → logisch „0“</p>
+
+        <h3>Erhaltung Wert der Zelle:</h3>
+            <p>Der Wert der Zelle bleibt selbst nach dem Ausleseprozess erhalten, da durch die kleine Spannung zum auslesen keine Veränderung an der Zelle stattfindet</p>
+    </section>
+    </main>
+
+    <main>
+        <div class="hover-text">
+        <a href="Index.html">
+            <button class="large-round-hover-btn">
+                <span>Zurück zur Startseite</span>    
+            </button>
+        </a>
+        
+        <a href="DRAM.html">
+            <button class="large-round-hover-btn">
+                <span>Zurück zu DRAM</span>    
+            </button>
+        </a>
+        </div>     
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Hardware Hub. All rights reserved.</p>
+        <section>
+            <h3>Contact</h3>
+            <p>Email: benedikt.spitzmaus@gmail.com</p>
+        </section>
+        <section>
+            <h3>About Us</h3>
+            <p>Eine Hardware Info Seite.</p>
+        </section>
+    </footer>
+
+    <script src="Script.js"></script>
+
+    <script> //java script KI generiert
+        
+        // Funktion zur automatischen Höhenanpassung der Textarea
+        function autoResize(textarea) {
+            // Setze die Höhe auf 'auto', damit die scrollHeight korrekt berechnet werden kann,
+            // auch wenn Text gelöscht wird und die Box kleiner werden soll.
+            textarea.style.height = 'auto';
+            // Setze die Höhe auf die scrollHeight.
+            // scrollHeight ist die gesamte Höhe des Inhalts, auch des nicht sichtbaren Teils.
+            textarea.style.height = textarea.scrollHeight + 'px';
+        }
+
+        // Optional: Rufe die Funktion einmal beim Laden auf, falls bereits Text vorhanden ist
+        // (z.B. wenn das Feld serverseitig mit Inhalt gefüllt wird).
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     const textarea = document.getElementById('dynamischeTextarea');
+        //     if (textarea) {
+        //         autoResize(textarea);
+        //     }
+        // });
+    </script>
+</body>
+</html>

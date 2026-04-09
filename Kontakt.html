@@ -1,0 +1,110 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAM-Speicher verstehen: D-RAM, S-RAM, M-RAM und R-RAM detailliert erklärt</title>
+    <meta name="description" content="Tauche tief ein in die Welt der RAM-Speicher! Erfahre alles über D-RAM, S-RAM, M-RAM und R-RAM, ihre Funktionsweisen, Vor- und Nachteile sowie Anwendungen in der modernen Technik.">
+    <meta name="keywords" content="DRAM, SRAM, MRAM, RRAM, RAM, Arbeitsspeicher, Speichertechnologien, flüchtiger Speicher, nicht-flüchtiger Speicher, Computer Hardware, RAM Vergleich, Speicherzukunft, NVM, Non-Volatile Memory, Dynamic RAM, Static RAM, Magnetoresistive RAM, Resistive RAM">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    <header>
+        <!-- WICHTIG: relativer Pfad für Bild, wenn es im selben Projektordner liegt -->
+        <a href="Index.html">
+            <img id="logo" src="HWLogo.png" alt="Hardware Hub Logo">
+        </a>
+        
+        <h1>Hardware Hub</h1>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Themen</button>
+            <div class="dropdown-content">
+                <a href="DRAM.html">DRAM</a>
+                <a href="SRAM.html">SRAM</a>
+                <a href="Vergleich-SD-Ram.html">Vergleich SD/RAM</a>
+                <a href="MRAM.html">M-RAM</a>
+                <a href="RRAM.html">R-RAM</a>
+            </div>
+        </div>
+            
+        <div class="dropdown">
+            <button class="dropbtn">Über uns</button>
+            <div class="dropdown-content">
+                <a href="Info.html">Hardware Hub</a>
+                <a href="Kontakt.html">Kontakt</a>
+                <a href="Quellen.html">Quellen</a>
+            </div>
+        </div>
+        
+        <a  class="header-right">
+            <img id="theme-toggle" src="theme-toggle.png" alt="theme-toggle">
+        </a>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Kontaktinformationen</h2>
+            <p>Hardware Hub</p>
+            <p>E-Mail: benedikt.spitzmaus@gmail.com</p>
+            <p>Adresse: 2PPJ+H9X, Pyongyang, Nordkorea</p> 
+        </section>
+    </main>
+
+
+
+    <main>
+        <section>
+            <h2>Feedback</h2>
+        </section>
+        <p>Für allgemeine Anfragen oder Feedback nutze bitte das untenstehende Formular. Bei dringenden Anliegen sind wir auch per E-Mail erreichbar.</p>
+
+        <section>
+            <textarea id="feedback" name="feedback" placeholder="Deine Nachricht..." oninput="autoResize(this)" ></textarea>
+        </section>
+
+        <div class="hover-text">
+        <a href="Nachricht gesendet.html">
+            <button class="send-button">
+                <span>Senden</span>    
+            </button>
+        </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hardware Hub. All rights reserved.</p>
+        <section>
+            <h3>Kontakt</h3>
+            <p>Email: benedikt.spitzmaus@gmail.com</p>
+        </section>
+        <section>
+            <h3>About Us</h3>
+            <p>Eine Hardware Info Seite.</p>
+        </section>
+    </footer>
+
+    <script src="Script.js"></script>
+
+    <script> //java script KI generiert
+        
+        // Funktion zur automatischen Höhenanpassung der Textarea
+        function autoResize(textarea) {
+            // Setze die Höhe auf 'auto', damit die scrollHeight korrekt berechnet werden kann,
+            // auch wenn Text gelöscht wird und die Box kleiner werden soll.
+            textarea.style.height = 'auto';
+            // Setze die Höhe auf die scrollHeight.
+            // scrollHeight ist die gesamte Höhe des Inhalts, auch des nicht sichtbaren Teils.
+            textarea.style.height = textarea.scrollHeight + 'px';
+        }
+
+        // Optional: Rufe die Funktion einmal beim Laden auf, falls bereits Text vorhanden ist
+        // (z.B. wenn das Feld serverseitig mit Inhalt gefüllt wird).
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     const textarea = document.getElementById('dynamischeTextarea');
+        //     if (textarea) {
+        //         autoResize(textarea);
+        //     }
+        // });
+    </script>
+</body>
+</html>

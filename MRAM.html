@@ -1,0 +1,286 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAM-Speicher verstehen: D-RAM, S-RAM, M-RAM und R-RAM detailliert erklärt</title>
+    <meta name="description" content="Tauche tief ein in die Welt der RAM-Speicher! Erfahre alles über D-RAM, S-RAM, M-RAM und R-RAM, ihre Funktionsweisen, Vor- und Nachteile sowie Anwendungen in der modernen Technik.">
+    <meta name="keywords" content="DRAM, SRAM, MRAM, RRAM, RAM, Arbeitsspeicher, Speichertechnologien, flüchtiger Speicher, nicht-flüchtiger Speicher, Computer Hardware, RAM Vergleich, Speicherzukunft, NVM, Non-Volatile Memory, Dynamic RAM, Static RAM, Magnetoresistive RAM, Resistive RAM">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    <header>
+        <!-- WICHTIG: relativer Pfad für Bild, wenn es im selben Projektordner liegt -->
+        <a href="Index.html">
+            <img id="logo" src="HWLogo.png" alt="Hardware Hub Logo">
+        </a>
+        
+        <h1>Hardware Hub</h1>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Themen</button>
+            <div class="dropdown-content">
+                <a href="DRAM.html">DRAM</a>
+                <a href="SRAM.html">SRAM</a>
+                <a href="Vergleich-SD-Ram.html">Vergleich SD/RAM</a>
+                <a href="MRAM.html">M-RAM</a>
+                <a href="RRAM.html">R-RAM</a>
+            </div>
+        </div>
+            
+        <div class="dropdown">
+            <button class="dropbtn">Über uns</button>
+            <div class="dropdown-content">
+                <a href="Info.html">Hardware Hub</a>
+                <a href="Kontakt.html">Kontakt</a>
+                <a href="Quellen.html">Quellen</a>
+            </div>
+        </div>
+        
+        <a  class="header-right">
+            <img id="theme-toggle" src="theme-toggle.png" alt="theme-toggle">
+        </a>
+    </header>
+    <main>
+    <h2>MRAM</h2>
+            <p>MRAM ist eine Speichertechnologie, welche mithilfe von Magnetischen Zuständen speichert (anstelle von elektrischen Zuständen), daher gehört sie zu den modernen Speichertechnologien. MRAM ist durch seine Speichertechnologie nichtflüchtig, schnell und hat eine besonders hohe Lebensdauer. Durch seine fortschrittliche Technologie könnte er langfristig klassische Speicher technologien wie z.B. DRAM ersetzen</p>
+        
+        <section>
+        <h3>Speicherung der Daten:</h3>
+            <p>MRAM speichert Daten mithilfe sogenannter magnetischer Tunnelübergänge (MTJs).Jede Speicherzelle besteht aus zwei magnetischen Schichten:</p>
+        <ul>
+            <li>Eine feste Schicht mit konstanter Magnetisierung</li>
+            <li>Eine freie Schicht, deren Magnetisierung umgepolt werden kann</li>
+        </ul>
+
+        <p>Je nach Ausrichtung der Magnetisierung ergibt sich ein unterschiedlicher elektrischer Widerstand:</p>
+        <ul>
+            <li>Parallel → niedriger Widerstand → entspricht einer „1“</li>
+            <li>Antiparallel → hoher Widerstand → entspricht einer „0“</li>
+
+        </ul>
+            <p>Der Zustand wird durch einen Sense Amplifier gelesen. Die Daten sind dabei dauerhaft gespeichert, solange sie nicht bewusst überschrieben werden.</p>
+        </section>
+        
+        <section>
+            <h3>Geschwindigkeit:</h3>
+            <p>MRAM ist vergleichbar schnell wie SRAM, da kein Kondensator geladen/entladen werden muss wie bei DRAM.</p>
+        </section>
+        
+        <section>
+            <h3>Kosten und Komplexität:</h3>
+        <p>Die Herstellung von MRAM ist technologisch anspruchsvoller als die von DRAM oder SRAM, da sie sowohl magnetische als auch elektrische Effekte auf sehr kleinem Raum kombinieren muss.
+            Aktuell ist MRAM daher teurer pro Bit (5-100mal so teuer wie DRAM) und nicht so dicht integrierbar wie DRAM oder Flash – was sich mit Fortschritten in der Fertigungstechnik jedoch stetig verbessert.</p>
+        </section>
+
+        <section>
+            <h3>Anwendungen:</h3>
+                <p>MRAM wird vor allem dort eingesetzt, wo hohe Geschwindigkeit, Datenhaltbarkeit und hohe Lebensdauer gefordert sind:</p>
+            <ul>
+                <li>Industriesteuerung</li>
+                <li>Luft- und Raumfahrt (da der Speicher durch Magnetspeicherung strahlungsresistent ist</li>
+                <li>Sicherheitskritische Systeme</li>
+                <li>Cache-Speicher in SSDs oder Mikrocontrollern</li>
+
+            </ul>
+        
+        </section>
+
+        <section>
+            <h3>Zukunft</h3>
+                <p>In der Zukunft könnte MRAM eine alternative zu herkömmlichen Speichern wie z.B. DRAM. Er könnte in der Zukunft zu einem richtigen Universalspeicher (üblichen Speicher) werden</p>
+        </section>
+
+        <section>
+            <h3>Flüchtigkeit</h3>
+                <p>Im Gegensatz zu SRAM und DRAM ist MRAM nicht flüchtig. Dies bedeutet das selbst wenn die Stromversorgung unterbrochen ist, der Speicherzustand dennoch erhalten bleibt. </p>
+        
+        <img id="content-media" src="MRAM-Bild.png" alt="MRAM">
+        </section>
+
+
+
+    </main>
+
+    <main>
+        <img id="content-media" src="STT-MRAM-cell-structures.png" alt="Schaltplan MRAM">
+    </main>
+
+    <main>
+    <section>
+        <h2>Aufbau MRAM</h2>
+            <ul>
+                <li>
+                    <h3>Wordline(WL) → Steuert den Zugriff auf gewünschte Zelle </h3>
+                </li>
+                <li>
+                    <h3>Pinned Line (feste Schicht) → Sie ist fest nach oben gepolt</h3>
+                </li>
+                <li>
+                    <h3>Oxidschicht (Isolierschicht z.B. MgO) → Steuert den Zugriff auf gewünschte Zelle </h3>
+                </li>
+                <li>
+                    <h3>Free Layer (freie Schicht) → Ihre Magnetisierung kann umgepolt werden (Schreibbar)</h3>
+                </li>
+                <li>
+                    <h3>Oxidschicht (Isolierschicht z.B. MgO) → Steuert den Zugriff auf gewünschte Zelle </h3>
+                </li>
+                <li>
+                    <h3>Bitline → Sie ist für den Lese- & Schreibstrom zuständig</h3>
+                </li>
+                <li>
+                    <h3>Source Line → Wichtig für Spannungsanlegung für den Elektronenspin  </h3>
+                </li>
+                <li>
+                    <h3>MJT → Es ist das konstrukt aus den Schichten</h3>
+                </li>
+                <li>
+                    <h3>Bitline → Sie ist für den Lese- & Schreibstrom zuständig</h3>
+                </li>
+                <li>
+                    <h3>Amplifier → Er ist wichtig für den Leseprozess, damit am Ende klare 0 oder 1</h3>
+                </li>
+                <img src="Amplifier-Bild.png" alt="Bild Amplifier" class="amplifier-img">  
+            </ul>
+    </section>
+    </main>
+    <main>
+        <section>
+        <h2>Schreiben auf eine MRAM-Zelle</h2>
+         
+        <section>   
+            <h3>Zelle adressieren:</h3>
+                <p>Der Speichercontroller wählt Zelle über Adresse aus</p>
+                <p>Die gewünschte Wordline wird aktiviert</p>
+                <p>So wird die Verbindung von Bit Line, MTJ & Source Line freigegeben</p>
+        </section>
+        
+        <section>
+            <h3>Spannung anlegen:</h3>
+                <p>Eine kontrollierte Schreibspannung wird zwischen Bit Line und Source Line angelegt</p>
+                <p>Dies erzeugt einen gerichteten Stromfluss durch die Zelle (entweder BL → SL oder SL → BL</p>
+        </section>
+
+        <section>
+            <h3>Spin-Polarisation:</h3>
+                <p>Je nach dem wie Spannung angelegt wird (von BL → SL oder SL → BL) verändert sich der Spin der Elektronen in der freien Schicht</p>
+                <p>Elektronen der festen Schicht verändern ihren Spin nicht, da sie zusätzlich mit einer antiferromagnetischen Schicht gekoppelt ist. Deshalb bleibt der Spin der Elektronen trotzdem stabil</p>
+                <img src="Elektronen-Spin.png" alt="Bild Spin" id="content-media">  
+        </section>
+            
+        <section> 
+            <h3>Magnetisierung der freien Schicht:</h3>
+                <p>Wenn die Elektronen der freien Schicht einen entgegengesetzten Spin wie die der festen Schicht haben, dann ziehen sich die Schichten an (antiparallele Ausrichtung).</p>
+                <p>Wenn die Elektronen der freien Schicht den gleichen Spin wie die der festen Schicht haben, dann stoßen sich die Schichten ab (parallele Ausrichtung).</p>
+                <ul>
+                    <li>
+                        <p>Gleiche Polarisierung → kleiner Widerstand → 1</p>
+                    </li>
+                    <li>
+                        <p>Gegensätzliche Polarisierung → hoher Widerstand → 0</p>
+                    </li>
+                </ul>
+        </section>
+
+        <section>
+            <h3>Schreibstrom stoppen:</h3>
+                <p>Der Strom wird abgeschalten</p>
+                <p>Die polarisierung der freien Schicht bleibt aber stabil und so auch ihr Zustand → deshalb nicht flüchtiger Speicher</p>
+        </section>
+    </main>
+    <main>
+        <h2>Auslesen MRAM-Zelle</h2>
+        
+        <section>
+            <h3>Zelle adressieren:</h3>
+                <p>Der Speichercontroller wählt über die Adresse die gewünschte Speicherzelle aus.</p>
+                <p>Die entsprechende Word Line (WL) wird aktiviert, sodass der Zugriffstransistor leitend wird.</p>
+        </section>
+
+        <section>
+            <h3>Leichter Lesestrom anlegen:</h3>
+                <p>Ein sehr kleiner Lesestrom (viel geringer als beim Schreiben) wird zwischen Bit Line und Source Line angelegt.</p>
+                <p>Der Strom fließt durch die MTJ-Zelle, durch die Tunnelbarriere</p>
+        </section>
+
+        <section>
+            <h3>Widerstand der Zelle beeinflusst Spannung:</h3>
+                <p>Aus der polarisierung von der freien Speicherzelle & der festen Speicherzelle resultiert ein Widerstand für den Strom</p>
+                <ul>
+                    <li>Gegensätzliche Polarisierung → hoher Widerstand</li>
+                    <li>Gleiche Polarisierung → kleiner Widerstand</li>
+                </ul>
+        </section>
+
+        <section>
+            <h3>Sense Amplifier vergleicht Spannung:</h3>
+                <p>Der Sense Amplifier vergleicht die Spannung der Zelle mit einer Referenzspannung (typischerweise einer Zelle mit bekanntem Zustand).</p>
+                <p>Der Amplifier macht aus daraus ein klares Signal (0/1)</p>
+        </section>
+
+        <section>
+            <h3>Interpretation des Bitwerts</h3>
+                <p>Niedrige Spannung, durch niederigen Widerstand → Bit = 1</p>
+                <p>Hohe Spannung, durch großen Widerstand → Bit = 0</p>
+                <p><strong>Es gilt V = I * R (Ohmsches Gesetz)</strong></p>
+        </section>
+                    
+        <section>
+            <h3>Deaktivierung Word-Line</h3>
+                <p>Da der Lesestrom nur sehr klein ist, bleibt dir polarisierung und somit der gespeicherte Wert der Zelle erhalten</p>
+                <p>Word-Line wird deaktiviert und Zelle kehrt wieder in ihren Ausgangszustand zurück </p>
+        </section>        
+    </main>
+
+    <main>
+        <div class="hover-text">
+        <a href="Index.html">
+            <button class="large-round-hover-btn">
+                <span>Zurück zur Startseite</span>    
+            </button>
+        </a>
+        
+        <a href="RRAM.html">
+            <button class="large-round-hover-btn">
+                <span>Weiter zu RRAM</span>    
+            </button>
+        </a>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Hardware Hub. All rights reserved.</p>
+        <section>
+            <h3>Contact</h3>
+            <p>Email: benedikt.spitzmaus@gmail.com</p>
+        </section>
+        <section>
+            <h3>About Us</h3>
+            <p>Eine Hardware Info Seite.</p>
+        </section>
+    </footer>
+
+    <script src="Script.js"></script>
+
+    <script> //java script KI generiert
+        
+        // Funktion zur automatischen Höhenanpassung der Textarea
+        function autoResize(textarea) {
+            // Setze die Höhe auf 'auto', damit die scrollHeight korrekt berechnet werden kann,
+            // auch wenn Text gelöscht wird und die Box kleiner werden soll.
+            textarea.style.height = 'auto';
+            // Setze die Höhe auf die scrollHeight.
+            // scrollHeight ist die gesamte Höhe des Inhalts, auch des nicht sichtbaren Teils.
+            textarea.style.height = textarea.scrollHeight + 'px';
+        }
+
+        // Optional: Rufe die Funktion einmal beim Laden auf, falls bereits Text vorhanden ist
+        // (z.B. wenn das Feld serverseitig mit Inhalt gefüllt wird).
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     const textarea = document.getElementById('dynamischeTextarea');
+        //     if (textarea) {
+        //         autoResize(textarea);
+        //     }
+        // });
+    </script>
+</body>
+</html>
